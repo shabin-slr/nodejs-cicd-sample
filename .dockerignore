@@ -1,0 +1,6 @@
+spec
+coverage
+.travis.yml
+Jenkinsfile
+Dockerfile
+readme.md
