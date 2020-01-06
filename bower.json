@@ -1,0 +1,23 @@
+{
+  "name": "tajawal",
+  "description": "Tajawal Test",
+  "main": "server.js",
+  "authors": [
+    "Shabin Muhammed"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/shabin-slr/hotel-searcher",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.3",
+    "bootstrap": "4.1.3"
+  }
+}

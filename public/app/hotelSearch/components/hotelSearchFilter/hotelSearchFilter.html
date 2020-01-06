@@ -1,0 +1,61 @@
+<div class="container-fliud">
+    <div class="card margin10px padding10px" >
+        <div class="card-body">
+            <div class="card-title">
+                Search Hotels
+            </div>
+            <form class="form-inline">
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="name" placeholder="Hotel Name" ng-model="$ctrl.filter.name">
+                
+                <label class="sr-only" for="city">City</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="city" placeholder="City" ng-model="$ctrl.filter.city">
+
+                <label class="sr-only" for="startPrice">Start Price</label>
+                <input type="number" class="form-control mb-2 mr-sm-2" id="startPrice" placeholder="Start Price" ng-model="$ctrl.filter.startPrice">
+
+                <label class="sr-only" for="endPrice">End Price</label>
+                <input type="number" class="form-control mb-2 mr-sm-2" id="endPrice" placeholder="End Price" ng-model="$ctrl.filter.endPrice">
+
+                <label class="sr-only" for="startDate">Start Date</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" uib-datepicker-popup="yyyy-MM-dd" class="form-control" id="startDate" placeholder="Start Date" is-open="$ctrl.startDatePicker.isOpen" ng-model="$ctrl.filter.startDate"/>
+                    <div class="input-group-append">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="$ctrl.startDatePicker.isOpen=!$ctrl.startDatePicker.isOpen"><i class="far fa-calendar-alt"></i></button> 
+                            
+                        </span>
+                    </div>
+                </div>
+
+                <label class="sr-only" for="endDate">End Date</label>
+                <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" uib-datepicker-popup="yyyy-MM-dd" class="form-control" id="endDate" placeholder="End Date" is-open="$ctrl.endDatePicker.isOpen" ng-model="$ctrl.filter.endDate"/>
+                    <div class="input-group-append">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="$ctrl.endDatePicker.isOpen=!$ctrl.endDatePicker.isOpen"><i class="far fa-calendar-alt"></i></button>
+                        </span>
+                    </div>
+                </div>
+
+                <label class="sr-only" for="sortBy">Sort By</label>
+                <select class="form-control mb-2 mr-sm-2" id="sortBy" placeholder="Sort By" ng-model="$ctrl.filter.sortBy">
+                    <option value="">---Sort By---</option>
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
+                </select>
+
+                <label class="sr-only" for="sortOrder">Sort Order</label>
+                <select class="form-control mb-2 mr-sm-2" id="sortOrder" placeholder="Sort Order" ng-model="$ctrl.filter.sortOrder">
+                    <option value="">---Sort Order---</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+                
+                <button type="submit" class="btn btn-primary mb-2 mr-sm-2" ng-click="$ctrl.searchHotels()">Submit</button>
+
+                <button type="reset" class="btn btn-secondary mb-2" ng-click="$ctrl.resetSearch()">Reset</button>
+            </form>
+        </div>
+    </div>
+</div>

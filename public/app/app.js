@@ -1,0 +1,1 @@
+angular.module("tajawal-test", ['ui.bootstrap']);

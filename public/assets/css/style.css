@@ -1,0 +1,28 @@
+.margin10px{
+    margin: 10px;
+}
+.padding10px{
+    padding: 10px;
+}
+.middle th tr {
+    vertical-align: middle !important;
+}
+
+/* .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-chevron-left:before {
+    content: "\e079";
+}
+.glyphicon-chevron-right:before {
+    content: "\e080";
+} */

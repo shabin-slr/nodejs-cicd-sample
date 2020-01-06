@@ -1,0 +1,38 @@
+<div class="container-fliud">
+    <div class="card margin10px padding10px">
+        <div class="card-title">
+           Hotels
+        </div>
+        <div class="panel" >
+            {{hotel.name}}
+        </div>
+        
+        <table class="table table-striped middle">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hotel in $ctrl.hotels">
+                    <th style="vertical-align: middle;">{{hotel.name}}</th>
+                    <td style="text-transform: capitalize;vertical-align: middle;">{{hotel.city}}</td>
+                    <td style="vertical-align: middle;" >{{hotel.price|currency:"$ "}}</td>
+                    <td>
+                        <table>
+                            <tr ng-repeat="availability in hotel.availability">
+                                <td >
+                                    {{availability.from}} to {{availability.to}}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+</div>
