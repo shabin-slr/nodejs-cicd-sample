@@ -43,8 +43,9 @@ describe("testing hotelSearchService", ()=>{
         })
     });
 
-    it("should expect 1+1=2", (done)=>{
+    // test to fail
+    /* it("should expect 1+1=2", (done)=>{
         expect(1+1).toBe(1);
         done();
-    })
+    }) */
 })
