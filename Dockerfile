@@ -1,4 +1,6 @@
 FROM node:8.17.0-alpine3.9
-EXPOSE 8080
+EXPOSE 3000
 COPY . .
+RUN npm install
+RUN node_modules/.bin/bower install --config.interactive=false --allow-root
 CMD node server.js
